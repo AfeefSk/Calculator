@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="m-0 flex justify-center items-center bg-gray-400">
+    <div id="Calculator" class="bg-gray-900 rounded-xl max-w-lg truncate border-2 border-white">
+
+        <input id="display" readonly class="w-full p-5 text-7xl text-left rounded-none bg-gray-600 text-white ">
+
+        <div id="key" class="grid grid-cols-4 gap-2.5 p-6 text-white text-2xl font-bold ">
+
+            <button onclick="appendToDisplay('+')"class=" w-24 h-24 border-2 border-white bg-orange-500 rounded-full hover:bg-orange-400 active:bg-orange-300 ">+</button>
+
+            <button onclick="appendToDisplay('7')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">7</button>
+
+            <button onclick="appendToDisplay('8')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">8</button>
+
+            <button onclick="appendToDisplay('9')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">9</button>
+
+            <button onclick="appendToDisplay('-')"class=" w-24 h-24 bg-orange-500 rounded-full border-2 border-white hover:bg-orange-400 active:bg-orange-300 ">-</button>
+            
+            <button onclick="appendToDisplay('4')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">4</button>
+
+            <button onclick="appendToDisplay('5')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">5</button>
+
+            <button onclick="appendToDisplay('6')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">6</button>
+
+            <button onclick="appendToDisplay('*')"class=" w-24 h-24 bg-orange-500 rounded-full border-2 border-white hover:bg-orange-400  active:bg-orange-300 ">*</button>
+
+            <button onclick="appendToDisplay('1')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">1</button>
+
+            <button onclick="appendToDisplay('2')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">2</button>
+
+            <button onclick="appendToDisplay('3')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">3</button>
+
+            <button onclick="appendToDisplay('/')"class=" w-24 h-24 bg-orange-500 rounded-full border-2 border-white hover:bg-orange-400  active:bg-orange-300 ">/</button>
+
+            <button onclick="appendToDisplay('0')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">0</button>
+
+            <button onclick="appendToDisplay('.')"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">.</button>
+
+            <button onclick="calculate()"class=" w-24 h-24 bg-gray-800 rounded-full border-2 border-white hover:bg-gray-600 active:bg-gray-500 ">=</button>
+
+            <button onclick="clearDisplay()"class=" w-24 h-24 bg-orange-500 rounded-full border-2 border-white hover:bg-orange-400  active:bg-orange-300 ">Clr</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
